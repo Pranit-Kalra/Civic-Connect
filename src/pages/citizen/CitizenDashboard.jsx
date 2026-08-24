@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import StatCard from '../../components/StatCard';
@@ -43,7 +42,6 @@ function CitizenDashboard({ issues, currentUser }) {
         </Link>
       </div>
 
-      {}
       {currentUser && (
         <div className="citizen-profile-card">
           <div className="profile-avatar-wrapper">
@@ -80,7 +78,6 @@ function CitizenDashboard({ issues, currentUser }) {
         </div>
       )}
 
-      {}
       <div className="grid-stats">
         <StatCard title="My Reported Issues" value={totalCount} icon="📝" />
         <StatCard title="Pending Review" value={pendingCount} icon="⏳" />
@@ -88,7 +85,6 @@ function CitizenDashboard({ issues, currentUser }) {
         <StatCard title="Successfully Resolved" value={resolvedCount} icon="✅" />
       </div>
 
-      {}
       <div style={{ marginTop: '2rem' }}>
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1.25rem' }}>
           <h2>Your Recent Submissions ({citizenIssues.length})</h2>

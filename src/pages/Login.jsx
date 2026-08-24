@@ -1,6 +1,3 @@
-// Login Page Component
-// Demonstrates form state handling (useState), controlled inputs, and password verification from mockData.js.
-
 import React, { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import Button from '../components/Button';
@@ -34,7 +31,6 @@ function Login({ onLogin, initialUsers = [], resolvers = [] }) {
     e.preventDefault();
     setErrorMessage('');
 
-    // Perform password verification using mockData.js helper functions
     let verification;
     if (selectedRole === 'resolver') {
       verification = verifyResolverPassword(email, password, resolvers);
@@ -49,7 +45,6 @@ function Login({ onLogin, initialUsers = [], resolvers = [] }) {
 
     const foundUser = verification.user;
 
-    // Log in user and redirect to appropriate dashboard
     onLogin(foundUser);
     navigate(`/${foundUser.role}/dashboard`);
   };

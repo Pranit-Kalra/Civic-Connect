@@ -10,7 +10,6 @@ function Sidebar({ role }) {
         </h4>
 
         <ul className="sidebar-menu">
-          {}
           {role === 'citizen' && (
             <>
               <li className="sidebar-item">
@@ -31,7 +30,6 @@ function Sidebar({ role }) {
             </>
           )}
 
-          {}
           {role === 'resolver' && (
             <>
               <li className="sidebar-item">
@@ -47,7 +45,6 @@ function Sidebar({ role }) {
             </>
           )}
 
-          {}
           {role === 'admin' && (
             <>
               <li className="sidebar-item">

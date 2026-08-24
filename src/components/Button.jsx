@@ -1,12 +1,12 @@
 import React from 'react';
 
-function Button({ 
-  children, 
-  onClick, 
-  variant = 'primary', 
-  size = '', 
+function Button({
+  children,
+  onClick,
+  variant = 'primary',
+  size = '',
   type = 'button',
-  disabled = false 
+  disabled = false
 }) {
   const btnClass = `btn btn-${variant} ${size ? `btn-${size}` : ''}`;
 

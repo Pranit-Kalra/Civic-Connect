@@ -1,6 +1,7 @@
 import React from 'react';
 
 function StatusBadge({ status }) {
+
   let badgeClass = 'badge-pending';
   
   if (status === 'Assigned') {

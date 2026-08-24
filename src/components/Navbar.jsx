@@ -26,6 +26,12 @@ function Navbar({ currentUser, onLogout }) {
         <li>
           <a href="#categories">Categories</a>
         </li>
+        <li>
+          <a href="#about">About Us</a>
+        </li>
+        <li>
+          <a href="#faq">FAQ</a>
+        </li>
 
         {currentUser ? (
           <>

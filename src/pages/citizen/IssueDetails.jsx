@@ -46,7 +46,6 @@ function IssueDetails({ issues }) {
           <StatusBadge status={issue.status} />
         </div>
 
-        {}
         <div style={{ backgroundColor: '#f8fafc', padding: '1.25rem', borderRadius: '8px', marginBottom: '2rem', border: '1px solid #e2e8f0' }}>
           <h4 style={{ fontSize: '0.85rem', textTransform: 'uppercase', color: '#64748b', marginBottom: '1rem' }}>
             Resolution Status Tracker
@@ -80,7 +79,6 @@ function IssueDetails({ issues }) {
           </div>
         </div>
 
-        {}
         <div className="details-grid">
           <div className="detail-item">
             <label>Location</label>
@@ -109,7 +107,6 @@ function IssueDetails({ issues }) {
           </p>
         </div>
 
-        {}
         {issue.resolutionNote && (
           <div style={{ marginTop: '1.5rem', backgroundColor: '#f0fdf4', border: '1px solid #bbf7d0', padding: '1.25rem', borderRadius: '8px' }}>
             <h4 style={{ color: '#166534', marginBottom: '0.4rem' }}>🔧 Resolution Information / Technician Notes:</h4>

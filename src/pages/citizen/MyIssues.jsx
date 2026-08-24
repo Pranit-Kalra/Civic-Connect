@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import IssueCard from '../../components/IssueCard';
@@ -28,7 +27,6 @@ function MyIssues({ issues, currentUser }) {
         </div>
       </div>
 
-      {}
       <div style={{ display: 'flex', gap: '0.5rem', marginBottom: '1.5rem', flexWrap: 'wrap' }}>
         {['All', 'Pending', 'Assigned', 'In Progress', 'Resolved'].map((status) => (
           <button

@@ -181,12 +181,10 @@ function App() {
 
   return (
     <div className="app-container">
-      {}
       <Navbar currentUser={currentUser} onLogout={handleLogout} />
 
       <main className="main-content">
         <Routes>
-          {}
           <Route path="/" element={<Home currentUser={currentUser} />} />
           <Route 
             path="/login" 
@@ -197,7 +195,6 @@ function App() {
             element={<Register onLogin={handleLogin} onAddUser={handleAddUser} users={users} resolvers={resolvers} />} 
           />
 
-          {}
           <Route 
             path="/citizen/dashboard" 
             element={
@@ -231,7 +228,6 @@ function App() {
             } 
           />
 
-          {}
           <Route 
             path="/resolver/dashboard" 
             element={
@@ -268,7 +264,6 @@ function App() {
             } 
           />
 
-          {}
           <Route 
             path="/admin/dashboard" 
             element={
@@ -327,7 +322,6 @@ function App() {
             } 
           />
 
-          {}
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </main>
