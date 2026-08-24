@@ -25,9 +25,9 @@ function ReportIssue({ onAddIssue, currentUser }) {
       citizenId: currentUser ? currentUser.id : 1,
       assignedTo: null,
       resolverId: null,
-      date: new Date().toLocaleDateString('en-GB', { day: '2-digit', month: 'short', year: 'numeric' }),
+      date: new Date().toLocaleDateString('en-IN', { day: '2-digit', month: 'short', year: 'numeric' }),
       resolutionNote: '',
-      imageUrl: imageUrl || 'https://images.unsplash.com/photo-1584467735871-8e85353a8413?auto=format&fit=crop&w=600&q=80'
+      imageUrl: imageUrl || 'https://images.unsplash.com/photo-1601027847350-0285867c31f7?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
     };
 
     onAddIssue(newIssue);
